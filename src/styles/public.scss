@@ -1,0 +1,259 @@
+// @charset "utf-8";
+// @import "./mixin";
+// /*注册模块*/
+// .register-wrap {
+//   width: 100%;
+//   background-color: #f4f4f4;
+//   padding: 70px 0;
+//   .register-mbg {
+//     background: url("./../assets/login_bg.jpg") center top no-repeat;
+//     height: 780px;
+//     width: 720px;
+//   }
+//   .register-form {
+//     width: 390px;
+//     height: 780px;
+//     margin-left: 50px;
+//     .title {
+//       position: relative;
+//       margin: 90px 0 38px 0;
+//       @include sc(36px, #333333);
+//       .email-pwd {
+//         @include allcover();
+//         right: 0;
+//         top: 15px;
+//         font-weight: 500;
+//         @include sc(18px, #5357e2);
+//       }
+//       .email-pwd:hover {
+//         text-decoration: underline;
+//       }
+//     }
+//     .set-btn {
+//       display: inline-block;
+//       text-align: center;
+//       margin-top: 10px;
+//       height: 60px;
+//       line-height: 60px;
+//       width: 100%;
+//       background-color: #2E6AF4;
+//       @include sc(20px, #ffffff);
+//       border-radius: 30px;
+//       cursor: pointer;
+//     }
+//     .to-login {
+//       position: relative;
+//       display: block;
+//       text-align: center;
+//       @include sc(14px, #3b50d2);
+//       margin-top: 50px;
+//     }
+//     .to-login:before, .to-login:after {
+//       content: '';
+//       position: absolute;
+//       top: 52%;
+//       background-color: #d8d8d8;
+//       width: 38%;
+//       height: 1px;
+//     }
+//     .to-login:before {
+//       left: 0;
+//     }
+//     .to-login:after {
+//       right: 0;
+//     }
+//     .form-pannel {
+//       width: 100%;
+//       //display: none;
+//       .find-pwd-link {
+//         @include sc(14px, #999999);
+//       }
+//       .find-pwd-link:hover {
+//         color: #3b50d2;
+//         text-decoration: underline;
+//       }
+//       .send-code-btn {
+//         @include allcover();
+//         right: 0;
+//         bottom: 2px;
+//         display: inline-block;
+//         height: 30px;
+//         line-height: 30px;
+//         @include sc(12px, #ffffff);
+//         background-color: #bfbfbf;
+//         padding: 0px 13px;
+//         border-radius: 35px;
+//       }
+//       .send-co-btn {
+//         @include allcover();
+//         right: 0;
+//         bottom: 2px;
+//         display: inline-block;
+//         height: 30px;
+//         line-height: 30px;
+//         @include sc(12px, #ffffff);
+//         background-color: #5357E2;
+//         padding: 0px 13px;
+//         border-radius: 35px;
+//       }
+//     }
+//     .steps-wrap {
+//       @include flexAuto();
+//       border-bottom: solid 1px #dcdfe6;
+//       span {
+//         display: inline-block;
+//         text-align: center;
+//         padding: 12px 38px;
+//         @include sc(16px, #999999);
+//       }
+//       span.active {
+//         @include sc(16px, #5357e2);
+//         margin-bottom: -1px;
+//         border-bottom: solid 1px #5357e2;
+//       }
+//     }
+//     /deep/ .el-step__head {
+//       display: none;
+//     }
+//     /deep/ .el-step__title.is-success {
+//       color: #5357e2;
+//       /* text-decoration: underline;*/
+//     }
+//     /deep/ .el-tabs__item {
+//       @include sc(16px, #999999);
+//     }
+//     /deep/ .el-tabs__item.is-active {
+//       color: #409EFF;
+//     }
+//     /deep/ .el-select {
+//       width: 100%;
+//     }
+//     /deep/ .el-input__inner {
+//       border: none 0;
+//       font-size: 14px;
+//       border-bottom: solid 1px #dcdfe6;
+//     }
+//     /deep/ .el-form-item {
+//       padding-top: 23px;
+//     }
+//     /deep/ .el-input__inner {
+//       @include sc(16px, "#999999");
+//     }
+//     /deep/ .el-steps--horizontal {
+//       border-bottom: solid 1px #d8d8d8;
+//       padding: 10px 0;
+//     }
+//   }
+// }
+// /*个人中心模块*/
+// .center-main {
+//   /* margin: 0 50px; */
+//   .center-title {
+//     padding: 0 0 20px 0;
+//     @include sc(24px, #333333);
+//     text-align: left;
+//     font-weight: bold;
+//   }
+//   /*search-list*/
+//   .search-wrap {
+//     height: 42px;
+//     line-height: 42px;
+//     padding-bottom: 10px;
+//     .select-class {
+//       margin-right: 20px;
+//     }
+//     /deep/ .el-input__inner {
+//       height: 35px;
+//       line-height: 35px;
+//     }
+//   }
+//   /*tab-list*/
+//   .tab-list {
+//     margin-top: 20px;
+//   }
+//   /*分页*/
+//   .page-wrap {
+//     text-align: center;
+//     margin: 30px 0;
+//   }
+// }
+// .breadcrumbs {
+//   margin-bottom: 20px;
+//   .el-breadcrumb {
+//     font-size: 16px;
+//   }
+//   time {
+//     color: #999;
+//     display: block;
+//     text-align: right;
+//   }
+// }
+// .infoBox {
+//   padding: 10px 0 20px;
+// }
+// .infoBox.border_b {
+//   border-bottom: 1px solid #ddd;
+// }
+// .account {
+//   div {
+//     font-size: 14px;
+//     color: #666;
+//     margin-bottom: 15px;
+//   }
+//   b {
+//     font-size: 24px;
+//     color: #FD8238;
+//   }
+//   .coin {
+//     font-size: 14px;
+//     color: #FD8238;
+//   }
+//   small {
+//     font-size: 14px;
+//   }
+//   em {
+//     font-size: 20px;
+//     font-weight: normal;
+//     padding: 0 3px;
+//   }
+//   em.disable {
+//     color: #999;
+//   }
+//   .lineUp {
+//     display: inline-block;
+//     font-size: 20px;
+//   }
+// }
+// .curListNum {
+//   font-size: 14px;
+//   margin: 20px 0 10px
+// }
+// .curListNum a {
+//   float: right;
+//   font-size: 12px;
+//   color: #999;
+// }
+// .curListNum a:hover {
+//   color: #409EFF
+// }
+// .el-table th {
+//   background: #F4F4F4;
+// }
+// .center-main .tab-list {
+//   margin-top: 0
+// }
+// //2行
+// .ellipsis {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: 2;
+// }
+// //自定义弹框
+// .customAlert{width: 336px;}
+// .customAlert .tips{background: url(../assets/tips.png) center top no-repeat;display: block;margin: 0 auto;width: 50px;height: 50px;margin: 10px auto 26px;}
+// .customAlert .el-message-box__title{font-size: 20px;}
+// .customAlert .el-message-box__btns{margin-bottom: 30px;margin-top: 10px;}
+// .customAlert .el-message-box__message p{text-align: center;color: #666;}
+// .customAlert .customAlertConfirm{width:180px;height:40px;margin: 0 auto;display: block;background:#2E6AF4;border-radius:20px;box-shadow:4px 4px 9px rgba(88,126,215,0.52);font-size: 16px;}
